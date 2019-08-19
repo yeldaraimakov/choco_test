@@ -14,7 +14,7 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'update_prices': {
         'task': 'update_prices',
-        'schedule': crontab(hour=14, minute=23),
+        'schedule': crontab(hour=0, minute=0),
     }
 }
 app.conf.timezone = 'UTC'

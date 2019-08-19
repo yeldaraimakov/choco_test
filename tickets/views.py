@@ -8,7 +8,6 @@ def home(request):
     prices = dict()
     for direction in DIRECTIONS:
         direct = direction[0] + '-' + direction[1]
-        prices[direct] = []
         cheap_tickets = cache.get(direct, {})
         for date, price in cheap_tickets.items():
             prices[(direct, date)] = price
