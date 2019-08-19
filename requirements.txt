@@ -1,0 +1,5 @@
+Django==2.2.4
+requests==2.22.0
+django-redis==4.10.0
+redis==3.3.7
+celery==4.3.0
